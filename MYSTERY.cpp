@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     unsigned long long int n;
         while(cin >>n){
-        int m=ffs(n);
+        int m=ffs(n);  //return rightmost set bit
             m--;
             m=pow(2,m);
             cout<<m;
