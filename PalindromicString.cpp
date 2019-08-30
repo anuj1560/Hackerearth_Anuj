@@ -4,13 +4,13 @@ using namespace std;
 
 int main() {
 	string s;
-	cin >> s;										// Reading input from STDIN
-	int l = 0; 
-    int h = s.size() - 1; 
+	cin >> s;
+	int i = 0; 
+    int n = s.size() - 1; 
   
-    while (h > l) 
+    while (n > i) 
     { 
-        if (s[l++] != s[h--]) 
+        if (s[i++] != s[n--]) 
         { 
            cout<< "NO"<<endl;
             return 0;; 
