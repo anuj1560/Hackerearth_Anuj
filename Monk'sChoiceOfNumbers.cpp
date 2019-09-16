@@ -18,7 +18,7 @@ int main(){
         cin>>x;
         a[i]=__builtin_popcount(x); 
     }
-    stable_sort(a,a+n,[](int a, int b){return a>b;});
+   sort(a,a+n,greater<int>());
     int sum=0;
     for(int i=0;i<k;i++)
         sum+=a[i];
